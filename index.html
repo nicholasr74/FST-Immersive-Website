@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="editor.css">
+  <link rel="stylesheet" href="gallery.css">
+
+  <title>Javascript Camera</title>
+  <link rel="icon" href="https://i.imgur.com/sfhTTRn.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="FSTSSLogo.jpeg" alt="">
+    </div>
+    <h1 id="name">FSTSS Guild Fest 22/23</h1>
+  </header>
+
+
+
+  <!-- CAMERA -->
+  <div id="webcam" class="container">
+    <a id="camera">
+      <video id="video" playsinline autoplay></video>
+    </a>
+
+    <!--Trigger canvas web api-->
+    <div class="controller text-center mb-3">
+      <button id=btnScreenshot class="button capture">Capture</button>
+    </div>
+
+  </div>
+
+
+  <!-- EDITOR -->
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h2>Photo Editor</h2>
+        <span class="close">&times;</span>
+      </div>
+
+      <canvas id="canvas" width="720" height="1280"></canvas>
+
+      <div class="modal-buttons">
+        <div class="text-center">
+          <button id="borderBtn1" class="button">Filter 1</button>
+          <button id="borderBtn2" class="button">Filter 2</button>
+          <button id="borderBtn3" class="button">Filter 3</button>
+          <button id="borderBtn4" class="button">Filter 4</button>
+          <button id="borderBtn5" class="button">Filter 5</button>
+        </div>
+
+        <div class="flex-container my-4">
+
+          <button id="btnUpload" class="button">Upload</button>
+
+          <a href="#camera">
+            <button id=btnRetake class="button">Retake</button>
+          </a>
+
+          <button id=btnRevert class="button">Revert</button>
+        </div>
+
+      </div> <!-- modal-buttons end -->
+
+    </div> <!-- modal-content end -->
+  </div> <!-- modal end -->
+
+
+  <!-- GALLERY -->
+  <div id="gallery">
+    <h4 class="text-center">Gallery</h4>
+    <div class="image-grid"></div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"
+    integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script src="modal.js"></script>
+
+</body>
+
+</html>
