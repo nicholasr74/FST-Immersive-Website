@@ -59,52 +59,52 @@ btnScreenshot.addEventListener("click", function() {
   const borderBtn4 = document.querySelector("#borderBtn4");
   const borderBtn5 = document.querySelector("#borderBtn5");
   let border = new Image();
-  let filtered = false;
+  //let filtered = false;
 
 
   borderBtn1.addEventListener("click", function() {
     border.src = "Border1.png";
-    if (filtered) {
+    //if (filtered) {
       context.drawImage(img, 0, 0, 720, 1280);
-    }
+    //}
     context.drawImage(border, 0, 0, 720, 1280);
-    fitered = true;
+    //fitered = true;
   });
 
   borderBtn2.addEventListener("click", function() {
     border.src = "Border2.png";
-    if (filtered) {
+    //if (filtered) {
       context.drawImage(img, 0, 0, 720, 1280);
-    }
+    //}
     context.drawImage(border, 0, 0, 720, 1280);
-    fitered = true;
+    //fitered = true;
   });
 
   borderBtn3.addEventListener("click", function() {
     border.src = "Border3.png";
-    if (filtered) {
+    //if (filtered) {
       context.drawImage(img, 0, 0, 720, 1280);
-    }
+    //}
     context.drawImage(border, 0, 0, 720, 1280);
-    fitered = true;
+    //fitered = true;
   });
 
   borderBtn4.addEventListener("click", function() {
     border.src = "Border4.png";
-    if (filtered) {
+    //if (filtered) {
       context.drawImage(img, 0, 0, 720, 1280);
-    }
+    //}
     context.drawImage(border, 0, 0, 720, 1280);
-    fitered = true;
+    //fitered = true;
   });
 
   borderBtn5.addEventListener("click", function() {
     border.src = "Border5.png";
-    if (filtered) {
+    //if (filtered) {
       context.drawImage(img, 0, 0, 720, 1280);
-    }
+    //}
     context.drawImage(border, 0, 0, 720, 1280);
-    fitered = true;
+    //fitered = true;
   });
 
 
